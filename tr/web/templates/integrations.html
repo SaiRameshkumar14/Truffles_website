@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Integrations - Truffles Software Solutions</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=97fdfa31c346c923d830c27d591ac4aa">
-    <link rel="stylesheet" href="/assets/css/Raleway.css?h=7cecc4ae5b762a4af126c8dbd69bb5b8">
-</head>
+{%load static%}
 
-<body>
-    <!-- Start: Navbar Centered Links -->
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Truffles Software Solutions</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/integrations.html">Integrations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/testimonials.html">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contacts.html">Contacts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="/signup.html">Sign up</a>
-            </div>
-        </div>
-    </nav><!-- End: Navbar Centered Links -->
-    <!-- Start: Hero Grid -->
-    <section class="py-5 mt-5">
+{%block content%}
+
+{%include 'nav.html' %}
+
+<section class="py-5 mt-5">
         <!-- Start: Hero Clean Reverse -->
         <div class="container py-4 py-xl-5">
             <div class="row gy-4 gy-md-0">
@@ -38,7 +17,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="/assets/img/illustrations/startup.svg?h=bd2b171f88c19ebbeec0b05e852bfefb"></div>
+                    <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="{% static 'img/illustrations/startup.svg' %}"></div>
                 </div>
             </div>
         </div><!-- End: Hero Clean Reverse -->
@@ -47,7 +26,7 @@
         <!-- Start: Features Cards -->
         <div class="container py-5">
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid" src="/assets/img/illustrations/data-management.svg?h=f9e8d7ce05be9b4c475951324c08ab83"></div>
+                <div class="col mb-5"><img class="rounded img-fluid" src="{% static 'img/illustrations/data-management.svg' %}"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
                         <h5 class="fs-3 fw-bold mb-4">Data management&nbsp;tools</h5>
@@ -78,7 +57,7 @@
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col order-md-last mb-5"><img class="rounded img-fluid" src="/assets/img/illustrations/javascript.svg?h=eafecf9f73d4396002873811619dadf5"></div>
+                <div class="col order-md-last mb-5"><img class="rounded img-fluid" src="{% static 'img/illustrations/javascript.svg' %}"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div class="ms-md-3">
                         <h5 class="fs-3 fw-bold mb-4">Data management&nbsp;tools</h5>
@@ -109,7 +88,7 @@
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                <div class="col mb-5"><img class="rounded img-fluid" src="/assets/img/illustrations/report.svg?h=a384f0b462eb4b0ee8a06da50af2cd10"></div>
+                <div class="col mb-5"><img class="rounded img-fluid" src="{% static 'img/illustrations/report.svg' %}"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
                         <h5 class="fs-3 fw-bold mb-4">Data management&nbsp;tools</h5>
@@ -196,6 +175,4 @@
     </footer><!-- End: Footer Multi Column -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/startup-modern.js?h=860a1ecddc64fd24c02f2fc109343dbd"></script>
-</body>
-
-</html>
+{%endblock%}

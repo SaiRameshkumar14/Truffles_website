@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+{%extends 'base.html'%}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Truffles Software Solutions</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=97fdfa31c346c923d830c27d591ac4aa">
-    <link rel="stylesheet" href="/assets/css/Raleway.css?h=7cecc4ae5b762a4af126c8dbd69bb5b8">
-</head>
+{%block content%}
 
-<body>
-    <!-- Start: Navbar Centered Links -->
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Truffles Software Solutions</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/integrations.html">Integrations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/testimonials.html">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contacts.html">Contacts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="/signup.html">Sign up</a>
-            </div>
-        </div>
-    </nav><!-- End: Navbar Centered Links -->
-    <header class="pt-5">
-        <!-- Start: Hero Clean Reverse -->
-        <div class="container pt-4 pt-xl-5">
+{%include "nav.html"%}
+
+{%load static%}
+
+<header class="pt-5">
+
+    <div class="container pt-4 pt-xl-5">
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
@@ -41,13 +21,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
-                    <div class="text-center position-relative"><img class="img-fluid" src="/assets/img/illustrations/meeting.svg?h=c663f8d8c612bee13c84963c242e37c8" style="width: 800px;"></div>
+                    <div class="text-center position-relative"><img class="img-fluid" src="{% static 'img/illustrations/meeting.svg' %}" style="width: 800px;"></div>
                 </div>
             </div>
-        </div><!-- End: Hero Clean Reverse -->
+        </div>
     </header>
     <section>
-        <!-- Start: Features Centered Icons -->
         <div class="container py-4 py-xl-5">
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col">
@@ -163,7 +142,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 order-first order-md-last">
-                    <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="/assets/img/illustrations/teamwork.svg?h=c9d16670db4191bc86105dabde77d312"></div>
+                    <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="{% static 'img/illustrations/teamwork.svg' %}"></div>
                 </div>
             </div>
         </div><!-- End: Hero Clean Reverse -->
@@ -173,7 +152,7 @@
         <div class="container py-4 py-xl-5">
             <div class="row gy-4 gy-md-0">
                 <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-                    <div><img class="rounded img-fluid fit-cover" style="min-height: 300px;" src="/assets/img/illustrations/presentation.svg?h=a949db52f9d6c50dd266e4eb5044d95a" width="800"></div>
+                    <div><img class="rounded img-fluid fit-cover" style="min-height: 300px;" src="{% static 'img/illustrations/presentation.svg' %}" width="800"></div>
                 </div>
                 <div class="col">
                     <div style="max-width: 450px;">
@@ -218,7 +197,7 @@
                             <div class="my-3"><a class="btn btn-secondary me-2 mt-2" role="button" href="#">Button</a><a class="btn btn-light mt-2" role="button" href="#">Button</a></div>
                         </div>
                     </div>
-                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-contain pt-5 pt-md-0" src="/assets/img/illustrations/web-development.svg?h=b53e17a605148633758769f0842db9a4"></div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-contain pt-5 pt-md-0" src="{% static 'img/illustrations/web-development.svg' %}"></div>
                 </div>
             </div>
         </div><!-- End: 1 Row 2 Columns -->
@@ -421,6 +400,6 @@
     </footer><!-- End: Footer Multi Column -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/startup-modern.js?h=860a1ecddc64fd24c02f2fc109343dbd"></script>
-</body>
 
-</html>
+
+{%endblock%}

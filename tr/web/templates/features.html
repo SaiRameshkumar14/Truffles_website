@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+{%extends 'base.html'%}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Features - Truffles Software Solutions</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=97fdfa31c346c923d830c27d591ac4aa">
-    <link rel="stylesheet" href="/assets/css/Raleway.css?h=7cecc4ae5b762a4af126c8dbd69bb5b8">
-</head>
+{%load static%}
 
-<body>
-    <!-- Start: Navbar Centered Links -->
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Truffles Software Solutions</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/integrations.html">Integrations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/testimonials.html">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contacts.html">Contacts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="/signup.html">Sign up</a>
-            </div>
-        </div>
-    </nav><!-- End: Navbar Centered Links -->
-    <!-- Start: Hero With Brands -->
-    <section class="py-5 mt-5">
+{%block content%}
+
+{%include 'nav.html'%}
+
+<section class="py-5 mt-5">
         <!-- Start: Hero Clean Reverse -->
         <div class="container py-4 py-xl-5">
             <div class="row gy-4 gy-md-0">
@@ -38,11 +17,11 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="/assets/img/illustrations/ranking.svg?h=ca58d7b8f0de2570529a24f76dfd586c"></div>
+                    <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="{% static 'img/illustrations/ranking.svg' %}"></div>
                 </div>
             </div>
             <div class="text-center mt-5">
-                <p class="mb-4" style="font-size: 1.6rem;">Used by <span class="text-primary bg-warning p-1"><strong>2400+</strong></span>&nbsp;of the best companies in the world.</p><a href="#"> <img class="m-3" src="/assets/img/brands/instacart.png?h=97130e4cdcf69395981757b0fbbe403a"></a><a href="#"> <img class="m-3" src="/assets/img/brands/kickstarter.png?h=d954a3b1647fca1ed9643c1c41b97194"></a><a href="#"> <img class="m-3" src="/assets/img/brands/lyft.png?h=656757eb7f118e9913346b5dbb0f487f"></a><a href="#"> <img class="m-3" src="/assets/img/brands/shopify.png?h=7b0ba00fce8158a8558defcf14e9e2cb"></a><a href="#"> <img class="m-3" src="/assets/img/brands/pinterest.png?h=cc425eabef048696dce776e9f3cbbb40"></a><a href="#"> <img class="m-3" src="/assets/img/brands/twitter.png?h=08305ab578ab5d194adbe451d1d168f3"></a>
+                <p class="mb-4" style="font-size: 1.6rem;">Used by <span class="text-primary bg-warning p-1"><strong>2400+</strong></span>&nbsp;of the best companies in the world.</p><a href="#"> <img class="m-3" src="{% static 'img/brands/instacart.png' %}"></a><a href="#"> <img class="m-3" src="{% static 'img/brands/kickstarter.png' %}"></a><a href="#"> <img class="m-3" src="{% static 'img/brands/lyft.png' %}"></a><a href="#"> <img class="m-3" src="{% static 'img/brands/shopify.png' %}"></a><a href="#"> <img class="m-3" src="{% static 'img/brands/pinterest.png' %}"></a><a href="#"> <img class="m-3" src="{% static 'img/brands/twitter.png' %}"></a>
             </div>
         </div><!-- End: Hero Clean Reverse -->
     </section><!-- End: Hero With Brands -->
@@ -141,7 +120,7 @@
         <!-- Start: Features Cards -->
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mb-5"><img class="rounded img-fluid" src="/assets/img/illustrations/presentation-2.svg?h=62055a158872377a76f00471405d9478"></div>
+                <div class="col-md-4 mb-5"><img class="rounded img-fluid" src="{% static 'img/illustrations/presentation-2.svg' %}"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div class="row gy-4 row-cols-1 row-cols-md-2 flex-grow-1">
                         <div class="col">
@@ -212,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 order-first order-md-last mb-5"><img class="rounded img-fluid" src="/assets/img/illustrations/video-call.svg?h=3f255025e551d865785d85ac2941cc31"></div>
+                <div class="col-md-4 order-first order-md-last mb-5"><img class="rounded img-fluid" src="{% static 'img/illustrations/video-call.svg' %}"></div>
             </div>
         </div><!-- End: Features Cards -->
     </section><!-- Start: Footer Multi Column -->
@@ -274,3 +253,5 @@
 </body>
 
 </html>
+
+{%endblock%}
