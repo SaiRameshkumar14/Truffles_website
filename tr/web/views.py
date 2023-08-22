@@ -17,6 +17,7 @@ def integration(request):
     return render(request, "integrations.html")
 
 def testimonials(request):
+    print(request.resolver_match.url_name)
     return render(request, "testimonials.html")
 
 def pricing(request):
