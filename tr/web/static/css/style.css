@@ -1,0 +1,5 @@
+nav {
+    backdrop-filter: blur(7.9px);
+    /* background: linear-gradient(5deg, #ff00eb61, transparent); */
+    border-radius: 9px;
+}

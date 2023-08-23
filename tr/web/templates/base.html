@@ -2,6 +2,9 @@
 <html data-bs-theme="light" lang="en">
 
 <head>
+
+    {%load static%}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     {%block title%}Truffles Software Solutions{%endblock%}
@@ -10,8 +13,10 @@
     {%load bootstrap5%}
     {%bootstrap_css%}
     {%bootstrap_javascript%}
-    {%load static%}
     <script src="{% static 'js/startup-modern.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 
 <body>
