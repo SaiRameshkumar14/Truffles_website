@@ -1,2 +1,0 @@
-# Truffles_website
-TRUFFLES SOFTWARE SOLUTIONS
