@@ -3,3 +3,11 @@ nav {
     /* background: linear-gradient(5deg, #ff00eb61, transparent); */
     border-radius: 9px;
 }
+.f-box{
+    box-shadow: rgba(36, 40, 91, 0.176) 0px 1rem 3rem ;
+    border-radius: 12px;
+}
+
+footer{
+    background: #80808026;
+}
