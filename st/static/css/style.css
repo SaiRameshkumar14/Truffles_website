@@ -1,12 +1,16 @@
+
+
 nav {
-    backdrop-filter: blur(7.9px);
-    /* background: linear-gradient(5deg, #ff00eb61, transparent); */
-    border-radius: 9px;
+    backdrop-filter: blur(8.9px);
+    /* border-radius: 9px; */
+    background: #ff000000;
 }
 .f-box{
     box-shadow: rgba(36, 40, 91, 0.176) 0px 1rem 3rem ;
     border-radius: 12px;
 }
+
+
 
 footer{
     background: #80808026;
